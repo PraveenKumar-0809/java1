@@ -1,0 +1,19 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+int arr[]= {5,2,10,8,9,3};
+int n=arr.length;
+int large=Integer.MIN_VALUE;
+int second_large=Integer.MIN_VALUE;
+int i;
+for(i=0;i<n;i++){
+    large=Math.max(large,arr[i]);
+}
+for(i=0;i<n;i++){
+    if(second_large<arr[i] && arr[i]!= large){
+    second_large=arr[i];
+    }
+}
+ System.out.println(second_large);
+	}
+}
